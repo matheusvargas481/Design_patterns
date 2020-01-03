@@ -1,4 +1,4 @@
-package com.matheussoilegra.coreengineering.tema13.com.matheussoilegra.coreengineering.tema13.strategy;
+package com.matheusvargas481.strategy;
 
 public class EmailNotificacaoStrategy implements NotificacaoStrategy {
 

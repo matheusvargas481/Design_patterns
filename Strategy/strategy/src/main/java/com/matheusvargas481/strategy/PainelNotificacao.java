@@ -1,6 +1,4 @@
-package com.matheussoilegra.coreengineering.tema13;
-
-import com.matheussoilegra.coreengineering.tema13.com.matheussoilegra.coreengineering.tema13.strategy.NotificacaoStrategy;
+package com.matheusvargas481.strategy;
 
 public class PainelNotificacao {
 

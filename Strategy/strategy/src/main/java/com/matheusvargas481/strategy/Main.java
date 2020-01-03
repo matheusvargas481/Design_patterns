@@ -1,6 +1,4 @@
-package com.matheussoilegra.coreengineering.tema13;
-
-import com.matheussoilegra.coreengineering.tema13.com.matheussoilegra.coreengineering.tema13.strategy.NotificacaoStrategyFactory;
+package com.matheusvargas481.strategy;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,12 +7,16 @@ public class Main {
 
         NotificacaoStrategyFactory notificacaoStrategyFactory = new NotificacaoStrategyFactory();
 
-        PainelNotificacao painelNotificacao = new PainelNotificacao(notificacaoStrategyFactory.getStrategy(mensagemEmail));
+        PainelNotificacao painelNotificacao = new PainelNotificacao(
+                notificacaoStrategyFactory.getStrategy(mensagemEmail));
         painelNotificacao.enviar(mensagemEmail);
+
         System.out.println(painelNotificacao.enviar(mensagemEmail));
 
-        painelNotificacao = new PainelNotificacao(notificacaoStrategyFactory.getStrategy(mensagemSms));
+        painelNotificacao = new PainelNotificacao(
+                notificacaoStrategyFactory.getStrategy(mensagemSms));
         painelNotificacao.enviar(mensagemSms);
+
         System.out.println(painelNotificacao.enviar(mensagemSms));
     }
 }
